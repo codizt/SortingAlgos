@@ -1,6 +1,5 @@
-def selectionSort():
-    # Initialize variables
-    unsortedList = [5, 3, 6, 2, 10]
+def selectionSort(unsortedList):
+    # Initialize the sorted list as empty
     sortedList = []
     # Loop through the list
     for i in range(len(unsortedList)):
@@ -13,5 +12,9 @@ def selectionSort():
         sortedList.append(smallest)
         # Remove the smallest value from the unsorted list
         unsortedList.remove(smallest)
-    # Print the sorted list
-    print(sortedList)
+        # Print the sorted list
+        # print(sortedList)
+    return sortedList
+    
+unsortedList = [5, 3, 6, 2, 10]
+print(selectionSort(unsortedList))
