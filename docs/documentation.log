@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.21)  10 APR 2022 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.3.21)  10 APR 2022 19:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -473,8 +473,8 @@ runsystem(which pygmentize && touch documentation.aex)...executed.
 
 runsystem(rm documentation.aex)...executed.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-8.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+0.
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -487,20 +487,20 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 (./documentation.aux)
 \openout1 = `documentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -525,31 +525,31 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-0.
+2.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-20.
+22.
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-20.
+22.
 
 (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 20.
+(Font)              <14.4> on input line 22.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 20.
+(Font)              <10> on input line 22.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 22.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-20.
+22.
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -568,9 +568,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  [1]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 28.
+(Font)              <10.95> on input line 30.
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--46
+Underfull \hbox (badness 10000) in paragraph at lines 31--48
 
  []
 
@@ -582,198 +582,273 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--46
 2161C4BC8A.pygtex
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 2.
-) (../pgf/bs_t.pgf) (../pgf/bs_m.pgf) (../pgf/bs_c.pgf)
+)
+<./pics//bubble_small.png, id=22, 1927.2pt x 1084.05pt>
+File: ./pics//bubble_small.png Graphic file (type png)
+<use ./pics//bubble_small.png>
+Package pdftex.def Info: ./pics//bubble_small.png  used on input line 98.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+<./pics//bubble_big.png, id=23, 1927.2pt x 1084.05pt>
+File: ./pics//bubble_big.png Graphic file (type png)
+<use ./pics//bubble_big.png>
+Package pdftex.def Info: ./pics//bubble_big.png  used on input line 99.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+ [3] (../pgf/bs_t.pgf) (../pgf/bs_m.pgf) (../pgf/bs_c.pgf)
 (../pgf/bs_s.pgf) (../pgf/bs_i.pgf)
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--101
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--106
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--101
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--106
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--101
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--106
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--101
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--106
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--101
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1461--106
 [] 
  []
 
-[3] [4] [5] [6] [7] [8]
+[4 <./pics//bubble_small.png> <./pics//bubble_big.png>]
+Overfull \vbox (169.37573pt too high) has occurred while \output is active []
+
+
+[5] [6] [7] [8]
 \openout3 = `documentation.pyg'.
 
 
 (./_minted-documentation/CB54D6F50B42DE336E7C9D4D129186CBA915778DD0972348D57344
-2161C4BC8A.pygtex) (../pgf/ss_t.pgf) (../pgf/ss_m.pgf) (../pgf/ss_c.pgf)
+2161C4BC8A.pygtex)
+<./pics//select_small.png, id=47, 1927.2pt x 1084.05pt>
+File: ./pics//select_small.png Graphic file (type png)
+<use ./pics//select_small.png>
+Package pdftex.def Info: ./pics//select_small.png  used on input line 149.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+<./pics//select_big.png, id=48, 1927.2pt x 1084.05pt>
+File: ./pics//select_big.png Graphic file (type png)
+<use ./pics//select_big.png>
+Package pdftex.def Info: ./pics//select_big.png  used on input line 150.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+ [9] (../pgf/ss_t.pgf) (../pgf/ss_m.pgf) (../pgf/ss_c.pgf)
 (../pgf/ss_s.pgf) (../pgf/ss_i.pgf)
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--149
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--157
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--149
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--157
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--149
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--157
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--149
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--157
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--149
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1409--157
 [] 
  []
 
-[9] [10] [11] [12] [13] [14]
+[10 <./pics//select_small.png> <./pics//select_big.png>]
+Overfull \vbox (169.37573pt too high) has occurred while \output is active []
+
+
+[11] [12] [13] [14]
 \openout3 = `documentation.pyg'.
 
 
 (./_minted-documentation/E9FE12B45A82D82B3F516296685D5024A915778DD0972348D57344
-2161C4BC8A.pygtex) (../pgf/is_t.pgf) (../pgf/is_m.pgf) (../pgf/is_c.pgf)
+2161C4BC8A.pygtex)
+<./pics//insert_small.png, id=68, 1927.2pt x 1084.05pt>
+File: ./pics//insert_small.png Graphic file (type png)
+<use ./pics//insert_small.png>
+Package pdftex.def Info: ./pics//insert_small.png  used on input line 203.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+<./pics//insert_big.png, id=69, 1927.2pt x 1084.05pt>
+File: ./pics//insert_big.png Graphic file (type png)
+<use ./pics//insert_big.png>
+Package pdftex.def Info: ./pics//insert_big.png  used on input line 204.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+ [15] (../pgf/is_t.pgf) (../pgf/is_m.pgf) (../pgf/is_c.pgf)
 (../pgf/is_s.pgf) (../pgf/is_i.pgf)
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--200
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--211
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--200
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--211
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--200
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--211
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--200
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--211
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--200
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1494--211
 [] 
  []
 
-[15] [16] [17] [18] [19] [20]
+[16 <./pics//insert_small.png> <./pics//insert_big.png>]
+Overfull \vbox (169.37573pt too high) has occurred while \output is active []
+
+
+[17] [18] [19] [20]
 \openout3 = `documentation.pyg'.
 
 
 (./_minted-documentation/679FF9571BD51D16A7E8A97B36053E6AA915778DD0972348D57344
-2161C4BC8A.pygtex [21]) (../pgf/ms_t.pgf) (../pgf/ms_m.pgf) (../pgf/ms_c.pgf)
-(../pgf/ms_s.pgf) (../pgf/ms_i.pgf)
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--265
+2161C4BC8A.pygtex [21])
+<./pics//merge_small.png, id=92, 1927.2pt x 1084.05pt>
+File: ./pics//merge_small.png Graphic file (type png)
+<use ./pics//merge_small.png>
+Package pdftex.def Info: ./pics//merge_small.png  used on input line 271.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+<./pics//merge_big.png, id=93, 1927.2pt x 1084.05pt>
+File: ./pics//merge_big.png Graphic file (type png)
+<use ./pics//merge_big.png>
+Package pdftex.def Info: ./pics//merge_big.png  used on input line 272.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+ [22] (../pgf/ms_t.pgf) (../pgf/ms_m.pgf)
+(../pgf/ms_c.pgf) (../pgf/ms_s.pgf) (../pgf/ms_i.pgf)
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--279
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--265
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--279
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--265
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--279
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--265
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--279
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--265
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1471--279
 [] 
  []
 
-[22] [23] [24] [25] [26]
+[23 <./pics//merge_small.png> <./pics//merge_big.png>]
+Overfull \vbox (169.37573pt too high) has occurred while \output is active []
+
+
+[24] [25] [26] [27]
 \openout3 = `documentation.pyg'.
 
 
 (./_minted-documentation/AC6618F8EED4D0CC70AA5C48E66E083AA915778DD0972348D57344
-2161C4BC8A.pygtex [27]) (../pgf/qs_t.pgf) (../pgf/qs_m.pgf) (../pgf/qs_c.pgf)
-(../pgf/qs_s.pgf) (../pgf/qs_i.pgf)
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--330
+2161C4BC8A.pygtex [28])
+<./pics//quick_small.png, id=117, 1927.2pt x 1084.05pt>
+File: ./pics//quick_small.png Graphic file (type png)
+<use ./pics//quick_small.png>
+Package pdftex.def Info: ./pics//quick_small.png  used on input line 339.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+<./pics//quick_big.png, id=118, 1927.2pt x 1084.05pt>
+File: ./pics//quick_big.png Graphic file (type png)
+<use ./pics//quick_big.png>
+Package pdftex.def Info: ./pics//quick_big.png  used on input line 340.
+(pdftex.def)             Requested size: 390.0pt x 219.37006pt.
+ [29] (../pgf/qs_t.pgf) (../pgf/qs_m.pgf)
+(../pgf/qs_c.pgf) (../pgf/qs_s.pgf) (../pgf/qs_i.pgf)
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--347
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--330
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--347
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--330
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--347
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--330
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--347
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--330
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 1451--347
 [] 
  []
 
-[28] [29] [30] [31] (../pgf/t.pgf) (../pgf/m.pgf) (../pgf/c.pgf) (../pgf/s.pgf)
+[30 <./pics//quick_small.png> <./pics//quick_big.png>]
+Overfull \vbox (169.37573pt too high) has occurred while \output is active []
+
+
+[31] [32] [33] (../pgf/t.pgf) (../pgf/m.pgf) (../pgf/c.pgf) (../pgf/s.pgf)
 (../pgf/i.pgf)
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--339
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--356
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--339
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--356
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--339
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--356
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--339
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--356
 []
  []
 
 
-Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--339
+Overfull \hbox (72.52756pt too wide) in paragraph at lines 4935--356
 [] 
  []
 
-[32]
+[34]
 Overfull \vbox (174.53575pt too high) has occurred while \output is active []
 
 
-[33] [34] [35] [36] (./documentation.aux)
+[35] [36] [37] [38] (./documentation.aux)
 runsystem(rm documentation.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 13700 strings out of 478276
- 278225 string characters out of 5853013
- 933625 words of memory out of 5000000
- 31512 multiletter control sequences out of 15000+600000
+ 13813 strings out of 478276
+ 280960 string characters out of 5853013
+ 936149 words of memory out of 5000000
+ 31622 multiletter control sequences out of 15000+600000
  518481 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,6n,90p,393b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,6n,90p,414b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf-dist/
 fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathi
 t.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf
@@ -785,10 +860,10 @@ usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmt
 t10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/tex
 mf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on documentation.pdf (37 pages, 518681 bytes).
+Output written on documentation.pdf (39 pages, 3697758 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

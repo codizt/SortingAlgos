@@ -5,6 +5,8 @@
 \usepackage{epigraph}
 \usepackage{lmodern}
 \usepackage{pgf}
+\usepackage{graphicx}
+\graphicspath{ {./pics/} }
 
 \title{Analysis of Various Sorting Algorithms \\ 19CSE212}
 \author{Deebakkarthi C R\\\color{magenta}\texttt{CB.EN.U4CSE20613}
@@ -92,6 +94,9 @@ def bubbleSort(unsortedList):
 	"Swaps":swap,
 	"Iterations":itr}
 \end{minted}
+\subsubsection*{Output}
+\includegraphics[width=\textwidth]{bubble_small}
+\includegraphics[width=\textwidth]{bubble_big}
 \subsubsection*{Graphs}
 \input{../pgf/bs_t.pgf}
 \input{../pgf/bs_m.pgf}
@@ -102,7 +107,7 @@ def bubbleSort(unsortedList):
 It has a runtime complexity of $O(N^2)$. Its space complexity is
 $O(1)$.
 \subsection{Selection Sort}
-\subsubsection{Principle}
+\subsubsection*{Principle}
 To sort an array in ascending order using selection sort, in each
 iteration we repeatedly select the smallest element from the
 unsorted part of the array and append it to the end of the sorted
@@ -140,6 +145,9 @@ def selectionSort(unsortedList):
             "Swaps":swap,
             "Iterations":itr}
 \end{minted}
+\subsubsection*{Output}
+\includegraphics[width=\textwidth]{select_small}
+\includegraphics[width=\textwidth]{select_big}
 \subsubsection*{Graphs}
 \input{../pgf/ss_t.pgf}
 \input{../pgf/ss_m.pgf}
@@ -191,13 +199,16 @@ def insertionSort(unsortedList):
             "Swaps":swap,
             "Iterations":itr}
 \end{minted}
+\subsubsection*{Output}
+\includegraphics[width=\textwidth]{insert_small}
+\includegraphics[width=\textwidth]{insert_big}
 \subsubsection*{Graphs}
 \input{../pgf/is_t.pgf}
 \input{../pgf/is_m.pgf}
 \input{../pgf/is_c.pgf}
 \input{../pgf/is_s.pgf}
 \input{../pgf/is_i.pgf}
-\subsubsection{Insights}
+\subsubsection*{Insights}
 We can see that insertion sort is a faster way to arrange smaller
 arrays but can take more time for larger ones, it has a runtime
 complexity of $O(N^2)$. Its space complexity is $O(1)$. The number of
@@ -256,6 +267,9 @@ def merge_sort(a):
                         k += 1
                     return
 \end{minted}
+\subsubsection*{Output}
+\includegraphics[width=\textwidth]{merge_small}
+\includegraphics[width=\textwidth]{merge_big}
 \subsubsection*{Graphs}
 \input{../pgf/ms_t.pgf}
 \input{../pgf/ms_m.pgf}
@@ -321,6 +335,9 @@ def part(a, l, r):
     (a[p_i], a[r]) = (a[r], a[p_i])
     return r
 \end{minted}
+\subsubsection*{Output}
+\includegraphics[width=\textwidth]{quick_small}
+\includegraphics[width=\textwidth]{quick_big}
 \subsubsection*{Graphs}
 \input{../pgf/qs_t.pgf}
 \input{../pgf/qs_m.pgf}
