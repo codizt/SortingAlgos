@@ -1,0 +1,44 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{qsort}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{r}\PYG{p}{):}
+    \PYG{k}{global} \PYG{n}{t\PYGZus{}comp}
+    \PYG{k}{global} \PYG{n}{t\PYGZus{}swap}
+    \PYG{k}{global} \PYG{n}{t\PYGZus{}itr}
+    \PYG{n}{t\PYGZus{}comp} \PYG{o}{+=} \PYG{l+m+mi}{1}
+    \PYG{k}{if} \PYG{n}{l} \PYG{o}{\PYGZlt{}} \PYG{n}{r}\PYG{p}{:}
+        \PYG{n}{p} \PYG{o}{=} \PYG{n}{part}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{r}\PYG{p}{)}
+        \PYG{n}{qsort}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{p} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{)}
+        \PYG{n}{t\PYGZus{}itr} \PYG{o}{+=} \PYG{l+m+mi}{1}
+        \PYG{n}{qsort}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{p} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{r}\PYG{p}{)}
+        \PYG{n}{t\PYGZus{}itr} \PYG{o}{+=} \PYG{l+m+mi}{1}
+
+
+\PYG{k}{def} \PYG{n+nf}{part}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{l}\PYG{p}{,} \PYG{n}{r}\PYG{p}{):}
+    \PYG{k}{global} \PYG{n}{t\PYGZus{}comp}
+    \PYG{k}{global} \PYG{n}{t\PYGZus{}swap}
+    \PYG{k}{global} \PYG{n}{t\PYGZus{}itr}
+    \PYG{n}{t\PYGZus{}swap} \PYG{o}{+=} \PYG{l+m+mi}{1}
+    \PYG{c+c1}{\PYGZsh{} swap middle element with the left most}
+    \PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{],} \PYG{n}{a}\PYG{p}{[(}\PYG{n}{l} \PYG{o}{+} \PYG{n}{r}\PYG{p}{)} \PYG{o}{//} \PYG{l+m+mi}{2}\PYG{p}{])} \PYG{o}{=} \PYG{p}{(}\PYG{n}{a}\PYG{p}{[(}\PYG{n}{l} \PYG{o}{+} \PYG{n}{r}\PYG{p}{)} \PYG{o}{//} \PYG{l+m+mi}{2}\PYG{p}{],} \PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{])}
+    \PYG{c+c1}{\PYGZsh{} pivot\PYGZus{}index}
+    \PYG{n}{p\PYGZus{}i} \PYG{o}{=} \PYG{n}{l}
+    \PYG{c+c1}{\PYGZsh{} pivot value}
+    \PYG{n}{p} \PYG{o}{=} \PYG{n}{a}\PYG{p}{[}\PYG{n}{p\PYGZus{}i}\PYG{p}{]}
+    \PYG{k}{while} \PYG{n}{l} \PYG{o}{\PYGZlt{}} \PYG{n}{r}\PYG{p}{:}
+        \PYG{n}{t\PYGZus{}comp} \PYG{o}{+=} \PYG{l+m+mi}{1}
+        \PYG{k}{while} \PYG{n}{l} \PYG{o}{\PYGZlt{}} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)} \PYG{o+ow}{and} \PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{]} \PYG{o}{\PYGZlt{}=} \PYG{n}{p}\PYG{p}{:}
+            \PYG{n}{t\PYGZus{}comp} \PYG{o}{+=} \PYG{l+m+mi}{1}
+            \PYG{n}{l} \PYG{o}{=} \PYG{n}{l} \PYG{o}{+} \PYG{l+m+mi}{1}
+        \PYG{k}{while} \PYG{n}{a}\PYG{p}{[}\PYG{n}{r}\PYG{p}{]} \PYG{o}{\PYGZgt{}} \PYG{n}{p}\PYG{p}{:}
+            \PYG{n}{t\PYGZus{}comp} \PYG{o}{+=} \PYG{l+m+mi}{1}
+            \PYG{n}{r} \PYG{o}{=} \PYG{n}{r} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}
+        \PYG{c+c1}{\PYGZsh{} Check for overlap}
+        \PYG{k}{if} \PYG{n}{l} \PYG{o}{\PYGZlt{}} \PYG{n}{r}\PYG{p}{:}
+            \PYG{n}{t\PYGZus{}comp} \PYG{o}{+=} \PYG{l+m+mi}{1}
+            \PYG{n}{t\PYGZus{}swap} \PYG{o}{+=} \PYG{l+m+mi}{1}
+            \PYG{c+c1}{\PYGZsh{} swap misplaced elements}
+            \PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{],} \PYG{n}{a}\PYG{p}{[}\PYG{n}{r}\PYG{p}{])} \PYG{o}{=} \PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{r}\PYG{p}{],} \PYG{n}{a}\PYG{p}{[}\PYG{n}{l}\PYG{p}{])}
+    \PYG{n}{t\PYGZus{}swap} \PYG{o}{+=} \PYG{l+m+mi}{1}
+    \PYG{c+c1}{\PYGZsh{} put pivot in the correct place}
+    \PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{p\PYGZus{}i}\PYG{p}{],} \PYG{n}{a}\PYG{p}{[}\PYG{n}{r}\PYG{p}{])} \PYG{o}{=} \PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{r}\PYG{p}{],} \PYG{n}{a}\PYG{p}{[}\PYG{n}{p\PYGZus{}i}\PYG{p}{])}
+    \PYG{k}{return} \PYG{n}{r}
+\end{Verbatim}

@@ -1,0 +1,42 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{merge\PYGZus{}sort}\PYG{p}{(}\PYG{n}{a}\PYG{p}{):}
+    \PYG{k}{global} \PYG{n}{t\PYGZus{}comp}
+    \PYG{k}{global} \PYG{n}{t\PYGZus{}swap}
+    \PYG{k}{global} \PYG{n}{t\PYGZus{}itr}
+    \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{1}\PYG{p}{:}
+        \PYG{n}{m} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)} \PYG{o}{//} \PYG{l+m+mi}{2}
+        \PYG{n}{l} \PYG{o}{=} \PYG{n}{a}\PYG{p}{[:}\PYG{n}{m}\PYG{p}{]}
+        \PYG{n}{r} \PYG{o}{=} \PYG{n}{a}\PYG{p}{[}\PYG{n}{m}\PYG{p}{:]}
+        \PYG{n}{merge\PYGZus{}sort}\PYG{p}{(}\PYG{n}{l}\PYG{p}{)}
+        \PYG{n}{t\PYGZus{}itr}\PYG{o}{+=}\PYG{l+m+mi}{1}
+        \PYG{n}{merge\PYGZus{}sort}\PYG{p}{(}\PYG{n}{r}\PYG{p}{)}
+        \PYG{n}{t\PYGZus{}itr}\PYG{o}{+=}\PYG{l+m+mi}{1}
+        \PYG{n}{size\PYGZus{}l} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{l}\PYG{p}{)}
+        \PYG{n}{size\PYGZus{}r} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{r}\PYG{p}{)}
+        \PYG{n}{i} \PYG{o}{=} \PYG{n}{j} \PYG{o}{=} \PYG{n}{k} \PYG{o}{=} \PYG{l+m+mi}{0}
+        \PYG{k}{while} \PYG{k+kc}{True}\PYG{p}{:}
+            \PYG{n}{t\PYGZus{}comp} \PYG{o}{+=} \PYG{l+m+mi}{1}
+            \PYG{k}{if} \PYG{n}{l}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{\PYGZlt{}=} \PYG{n}{r}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]:}
+                \PYG{n}{a}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]} \PYG{o}{=} \PYG{n}{l}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}
+                \PYG{n}{i} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                \PYG{n}{k} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                \PYG{n}{t\PYGZus{}comp} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                \PYG{k}{if} \PYG{n}{i} \PYG{o}{==} \PYG{n}{size\PYGZus{}l}\PYG{p}{:}
+                    \PYG{k}{while} \PYG{n}{j} \PYG{o}{\PYGZlt{}} \PYG{n}{size\PYGZus{}r}\PYG{p}{:}
+                        \PYG{n}{a}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]} \PYG{o}{=} \PYG{n}{r}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}
+                        \PYG{n}{j} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                        \PYG{n}{k} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                    \PYG{k}{return}
+            \PYG{k}{else}\PYG{p}{:}
+                \PYG{n}{t\PYGZus{}swap} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                \PYG{n}{a}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]} \PYG{o}{=} \PYG{n}{r}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}
+                \PYG{n}{j} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                \PYG{n}{k} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                \PYG{n}{t\PYGZus{}comp} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                \PYG{k}{if} \PYG{n}{j} \PYG{o}{==} \PYG{n}{size\PYGZus{}r}\PYG{p}{:}
+                    \PYG{k}{while} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{size\PYGZus{}l}\PYG{p}{:}
+                        \PYG{n}{a}\PYG{p}{[}\PYG{n}{k}\PYG{p}{]} \PYG{o}{=} \PYG{n}{l}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}
+                        \PYG{n}{i} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                        \PYG{n}{k} \PYG{o}{+=} \PYG{l+m+mi}{1}
+                    \PYG{k}{return}
+\end{Verbatim}

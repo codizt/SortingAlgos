@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{insertionSort}\PYG{p}{(}\PYG{n}{unsortedList}\PYG{p}{):}
+    \PYG{n}{swap} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{itr} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{comp} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{tracemalloc}\PYG{o}{.}\PYG{n}{start}\PYG{p}{()}
+    \PYG{n}{t\PYGZus{}s} \PYG{o}{=} \PYG{n}{perf\PYGZus{}counter\PYGZus{}ns}\PYG{p}{()}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{unsortedList}\PYG{p}{)):}
+        \PYG{n}{itr} \PYG{o}{+=} \PYG{l+m+mi}{1}
+        \PYG{n}{key} \PYG{o}{=} \PYG{n}{unsortedList}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}
+        \PYG{n}{ptr} \PYG{o}{=} \PYG{n}{i} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}
+        \PYG{n}{comp} \PYG{o}{+=} \PYG{l+m+mi}{1}
+
+        \PYG{k}{while} \PYG{n}{ptr} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0} \PYG{o+ow}{and} \PYG{n}{unsortedList}\PYG{p}{[}\PYG{n}{ptr}\PYG{p}{]} \PYG{o}{\PYGZgt{}} \PYG{n}{key}\PYG{p}{:}
+            \PYG{n}{unsortedList}\PYG{p}{[}\PYG{n}{ptr} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{=} \PYG{n}{unsortedList}\PYG{p}{[}\PYG{n}{ptr}\PYG{p}{]}
+            \PYG{n}{ptr} \PYG{o}{\PYGZhy{}=} \PYG{l+m+mi}{1}
+            \PYG{n}{swap} \PYG{o}{+=} \PYG{l+m+mi}{1}
+            \PYG{n}{itr} \PYG{o}{+=} \PYG{l+m+mi}{1}
+
+        \PYG{n}{unsortedList}\PYG{p}{[}\PYG{n}{ptr} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{=} \PYG{n}{key}
+    \PYG{n}{t\PYGZus{}e} \PYG{o}{=} \PYG{n}{perf\PYGZus{}counter\PYGZus{}ns}\PYG{p}{()}
+    \PYG{n}{mem} \PYG{o}{=} \PYG{n}{tracemalloc}\PYG{o}{.}\PYG{n}{get\PYGZus{}traced\PYGZus{}memory}\PYG{p}{()[}\PYG{l+m+mi}{1}\PYG{p}{]}
+    \PYG{n}{tracemalloc}\PYG{o}{.}\PYG{n}{stop}\PYG{p}{()}
+    \PYG{k}{return} \PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}Time\PYGZdq{}}\PYG{p}{:}\PYG{n}{t\PYGZus{}e}\PYG{o}{\PYGZhy{}}\PYG{n}{t\PYGZus{}s}\PYG{p}{,}
+            \PYG{l+s+s2}{\PYGZdq{}Memory\PYGZdq{}}\PYG{p}{:}\PYG{n}{mem}\PYG{p}{,}
+            \PYG{l+s+s2}{\PYGZdq{}Comparisons\PYGZdq{}}\PYG{p}{:}\PYG{n}{comp}\PYG{p}{,}
+            \PYG{l+s+s2}{\PYGZdq{}Swaps\PYGZdq{}}\PYG{p}{:}\PYG{n}{swap}\PYG{p}{,}
+            \PYG{l+s+s2}{\PYGZdq{}Iterations\PYGZdq{}}\PYG{p}{:}\PYG{n}{itr}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
